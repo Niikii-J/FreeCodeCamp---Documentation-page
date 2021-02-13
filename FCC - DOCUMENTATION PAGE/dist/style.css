@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(146deg, rgba(192,255,161,1) 0%, rgba(184,107,228,1) 100%);
+ }
+
+header {
+   font-family: 'Reggae One', cursive;
+  font-size: 20px;
+  color: #400e6b;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #a25df0;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Reggae One', cursive;
+}
+
+#navbar a {
+  display: block;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#navbar a:hover:not(.active) {
+  background-color: #2e0e52;
+  color: white;
+}
+
+#container{
+  margin-left: 15%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+p, ul {
+    font-family: 'Roboto Slab', serif;
+}
+
+#tips {
+  background-color: #9adbbd;
+  border-radius: 0;
+  color: black;
+}
+
+
+/*Displays the nav bar verically on smaller screens*/
+@media screen and (max-width: 700px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10%;
+  }
+  #navbar a {float: left;}
+  
+  #container {margin-left: 2%;}
+}
