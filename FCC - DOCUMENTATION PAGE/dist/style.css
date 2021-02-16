@@ -1,21 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: linear-gradient(146deg, rgba(192,255,161,1) 0%, rgba(184,107,228,1) 100%);
+background-image:url(https://images.unsplash.com/photo-1494208133010-7227229a632a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGxlYXZlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  color: white;
  }
 
 header {
-   font-family: 'Reggae One', cursive;
+  font-family: 'Reggae One', cursive;
   font-size: 20px;
-  color: #400e6b;
-  background-color: white;
+  color: white;
+  background-color: hsla(0, 0%, 22%, 0.32);
   padding: 20px;
   border-radius: 20px;
+  border: 3px solid white;
 }
+
 
 #navbar {
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: #a25df0;
+  background-color: hsla(141, 61%, 40%, 0.5);
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -24,19 +31,20 @@ header {
 
 #navbar a {
   display: block;
-  color: black;
+  color: hsl(141, 98%, 84%);
   padding: 20px;
   text-decoration: none;
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
   color: white;
 }
 
 #navbar a:hover:not(.active) {
-  background-color: #2e0e52;
+  background-color: hsl(141, 100%, 11%);
   color: white;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 #container{
